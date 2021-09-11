@@ -1,0 +1,17 @@
+class Array ():
+  def __init__(self , tamano):
+    self.__tamano = tamano
+    self.__data =[0 for x in range(self.__tamano)]
+
+  def get_item(self , index):
+    return self.__data[index]
+  def to_string(self):
+    print(self.__data)
+  def set_item(self, key, item):
+    self.__data[key] = item
+    print(self.__data)
+  def get_length(self):
+    print(self.__tamano)
+  def clear(self, key ):
+            self.__data=[key for x in range(self.__tamano)]
+            print(self.__data)
